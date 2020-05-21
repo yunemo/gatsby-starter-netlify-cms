@@ -60,7 +60,7 @@ export const BlogPostTemplate = ({
         }
       </div>
       <PostContent content={content} className="post_content"/>
-      <RelatedPost category={category} title={title}/>
+     
     
     </section>
   )
