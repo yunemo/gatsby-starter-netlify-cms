@@ -23,16 +23,17 @@ export const BlogPostTemplate = ({
   featuredimage
 }) => {
   const PostContent = contentComponent || Content
-  // const title = title || null
-  // const category = category || null
-  // const featuredimage = featuredimage || null
-  // const figcaption = figcaption || null
-  // const date = date || null
+  
+  const year = date.getFullYear();
+  const month = 1 + date.getMonth();
+  const day = date.getDate();
+  const date_str = `${year}/${month}/${day}`;
+
   return (
     <section className="post">
       <div className="post_header">
         <div className="post_subline">
-          <div className="post_date">  </div>
+          <div className="post_date"> {date_str} </div>
           <div className="post_category" style={
             CategoryColors[snakeCase(category)] ?
               { color: CategoryColors[snakeCase(category)] }
