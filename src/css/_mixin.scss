@@ -1,0 +1,51 @@
+@mixin pc {
+    @media (min-width: $pc_min_width) {
+        @content;
+    }
+}
+
+@mixin lpc {
+    @media (min-width: 1300px) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mq($media-width) {
+    
+    
+    @if $media-width == tab {
+      @media only screen and (max-width: 1024px) {
+        @content;
+      }
+    }
+
+    @else if $media-width == sp {
+      @media only screen and (max-width: 768px) {
+        @content;
+      }
+    }
+
+    @else if $media-width == lpc {
+        @media only screen and (min-width: 1300px) {
+          @content;
+        }
+      }
+    
+    @else {
+      @media only screen and (max-width: 768px) {
+        @content;
+      }
+    }
+  }

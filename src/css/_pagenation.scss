@@ -1,0 +1,44 @@
+.pagenation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 160px 0 0;
+  @include sp {
+    padding-top: 70px 0 0;
+  }
+  &_prev {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_next {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 43px;
+  }
+  &_number {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 12px;
+    color: #D5D5D5;
+    &.current {
+      color: #0673F3
+    }
+  }
+}

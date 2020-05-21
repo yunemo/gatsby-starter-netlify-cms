@@ -1,0 +1,113 @@
+.GlobalFooter {
+  background-color: #000;
+  padding: 64px 30px;
+  @media only screen and (min-width: 1020px) {
+    padding: 110px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  @media only screen and (min-width: 1440px){
+    flex-direction: row;
+  }
+
+  .column-left {
+    @media only screen and (min-width: 1020px) {
+      padding: 0 40px;
+    }
+    @media only screen and (min-width: 1440px){
+      width: 16.6%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .inner {
+      width: 100%;
+      @media only screen and (min-width: 1020px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+      }
+      @media only screen and (min-width: 1440px){
+        display: block;
+        max-width: 142px;
+      }
+    }
+  }
+
+  .column-right {
+    margin-top: 67px;
+    @media only screen and (min-width: 1020px) {
+      margin-top: 88px;
+      padding-left: 40px;
+      display: flex;
+    }
+    @media only screen and (min-width: 1440px){
+      width: 66.6%;
+      margin-top: 0;
+    }
+
+    .inner {
+      width: 100%;
+      @media only screen and (min-width: 1020px) {
+        width: 25%;
+      }
+      & + .inner {
+        margin-top: 42px;
+        @media only screen and (min-width: 1020px) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .logo {
+   
+    fill: #fff;
+    width: 142px;
+    height: 26px;
+  
+  }
+
+  .heading {
+    font-size: 14px;
+    color: #fff;
+  }
+
+  .list-nav {
+    margin-top: 24px;
+    padding-right: 10%;
+
+    a {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 2;
+      transition: color 0.3s ease;
+      color: #979797;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  .list-sns {
+    margin-top: 69px;
+    display: flex;
+    @media only screen and (min-width: 1020px) {
+      margin-top: 0;
+    }
+    @media only screen and (min-width: 1440px){
+      margin-top: 64px;
+    }
+
+    li + li {
+      margin-left: 24px;
+    }
+
+    .svg-icon {
+      width: 26px;
+      height: auto;
+    }
+  }
+}

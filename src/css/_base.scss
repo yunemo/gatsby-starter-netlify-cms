@@ -1,0 +1,19 @@
+body {
+  box-sizing: border-box;
+  font-family: Objektiv Mk1;
+  padding-top: 164px;
+  @include sp {
+    padding-top: 153px;
+  }
+}
+.container {
+  width : 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 25px;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
