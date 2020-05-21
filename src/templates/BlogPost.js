@@ -59,8 +59,7 @@ export const BlogPostTemplate = ({
             ) : null
         }
       </div>
-      <PostContent content={content} className="post_content"/>
-     
+      
     
     </section>
   )
