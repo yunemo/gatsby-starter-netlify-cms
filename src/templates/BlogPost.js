@@ -4,7 +4,7 @@ import { snakeCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import { HTMLContent } from '../components/Content'
+import Content, { HTMLContent } from '../components/Content'
 import RelatedPost from '../components/RelatedPost'
 import Img from "gatsby-image"
 import facebook from '../img/icon-fb.svg'
@@ -14,6 +14,7 @@ import CategoryColors from '../data/CategoryColors'
 
 export const BlogPostTemplate = ({
   content,
+  contentComponent,
   description,
   category,
   title,
@@ -21,7 +22,7 @@ export const BlogPostTemplate = ({
   figcaption,
   date
 }) => {
-  const PostContent = content
+  const PostContent = contentComponent || Content
   return (
     <section className="post">
       <div className="post_header">
