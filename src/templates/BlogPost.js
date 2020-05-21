@@ -111,11 +111,13 @@ export const BlogPostTemplate = ({
   content,
   contentComponent,
   description,
-  tags,
+  category,
   title,
-  helmet,
+  featuredimage,
+  figcaption,
+  date
 }) => {
-  const PostContent = contentComponent || Content
+  const PostContent = contentComponent || content
 
   return (
     <section className="post">
