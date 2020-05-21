@@ -88,6 +88,14 @@
     >*:last-child {
       margin-bottom: 0px;
     }
+    >div {
+      >* {
+        margin-bottom: 40px;
+      }
+      >*:last-child {
+        margin-bottom: 0px;
+      }
+    }
     h2 {
       font-size: 34px;
       font-weight: bold;
