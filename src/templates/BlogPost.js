@@ -22,7 +22,7 @@ export const BlogPostTemplate = ({
   figcaption,
   date
 }) => {
-  const PostContent = contentComponent || Content
+
   return (
     <section className="post">
       <div className="post_header">
