@@ -23,7 +23,7 @@ export const BlogPostTemplate = ({
   date
 }) => {
   const PostContent = contentComponent || Content
-  const {title, category, featuredimage, figcaption, date} = {title, category, featuredimage, figcaption, date}
+  const [title, category, featuredimage, figcaption, date] = [title, category, featuredimage, figcaption, date]
   return (
     <section className="post">
       <div className="post_header">
