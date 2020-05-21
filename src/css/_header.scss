@@ -13,7 +13,6 @@
   color: #fff;
   transition: background-color 0.3s ease;
   @media only screen and (min-width: 1020px) {
-    padding: 0 29px 0 34px;
     display: none;
   }
 
@@ -242,23 +241,20 @@
 // desktop
 .GlobalHeaderDesktop {
   display: none;
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 90px;
-  padding: 0 22px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #000;
-  color: #fff;
-  transition: background-color 0.3s ease;
-  display: none;
   @media only screen and (min-width: 1020px) {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #000;
+    color: #fff;
+    transition: background-color 0.3s ease;
     padding: 0 29px 0 34px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   a {
