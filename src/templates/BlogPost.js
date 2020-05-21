@@ -16,11 +16,11 @@ export const BlogPostTemplate = ({
   content,
   contentComponent,
   description,
+  date,
   category,
   title,
-  featuredimage,
   figcaption,
-  date
+  featuredimage
 }) => {
   const PostContent = contentComponent || Content
   // const title = title || null
@@ -75,11 +75,11 @@ BlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
-  title: PropTypes.string,
+  date: PropTypes.instanceOf(Date),
   category: PropTypes.string,
-  featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  title: PropTypes.string,
   figcaption: PropTypes.string,
-  date: PropTypes.instanceOf(Date)
+  featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
 }
 
 
