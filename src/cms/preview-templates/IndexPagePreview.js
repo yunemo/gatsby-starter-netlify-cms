@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-// import { IndexPageTemplate } from '../../templates/AllLists'
+import AllLists from '../../templates/AllLists'
 
 const IndexPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
 
   if (data) {
     return (
-      <div> test </div>
+      <AllLists />
     )
   } else {
     return <div>Loading...</div>
