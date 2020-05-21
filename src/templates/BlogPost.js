@@ -23,7 +23,11 @@ export const BlogPostTemplate = ({
   date
 }) => {
   const PostContent = contentComponent || Content
-
+  const title = title || null
+  const category = category || null
+  const featuredimage = featuredimage || null
+  const figcaption = figcaption || null
+  const date = date || null
   return (
     <section className="post">
       <div className="post_header">
