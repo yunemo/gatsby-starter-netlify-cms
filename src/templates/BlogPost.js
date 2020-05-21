@@ -32,7 +32,7 @@ export const BlogPostTemplate = ({
     <section className="post">
       <div className="post_header">
         <div className="post_subline">
-          <div className="post_date">{date} </div>
+          <div className="post_date">  </div>
           <div className="post_category" style={
             CategoryColors[snakeCase(category)] ?
               { color: CategoryColors[snakeCase(category)] }
