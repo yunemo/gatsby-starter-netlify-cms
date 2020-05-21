@@ -23,11 +23,11 @@ export const BlogPostTemplate = ({
   date
 }) => {
   const PostContent = contentComponent || Content
-  const title = title || null
-  const category = category || null
-  const featuredimage = featuredimage || null
-  const figcaption = figcaption || null
-  const date = date || null
+  // const title = title || null
+  // const category = category || null
+  // const featuredimage = featuredimage || null
+  // const figcaption = figcaption || null
+  // const date = date || null
   return (
     <section className="post">
       <div className="post_header">
@@ -69,6 +69,17 @@ export const BlogPostTemplate = ({
     
     </section>
   )
+}
+
+BlogPostTemplate.propTypes = {
+  content: PropTypes.node.isRequired,
+  contentComponent: PropTypes.func,
+  description: PropTypes.string,
+  title: PropTypes.string,
+  category: PropTypes.string,
+  featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  figcaption: PropTypes.string,
+  date: PropTypes.instanceOf(Date)
 }
 
 
