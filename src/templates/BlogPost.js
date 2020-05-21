@@ -25,7 +25,7 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content
   
   const dateList = date.toUTCString().split(" ")
-  const dateStr = `${dateList[1]}/${dateList[2]}/${dateList[3]}`;
+  const dateStr = `${dateList[2]} ${dateList[1]},${dateList[3]}`;
 
   return (
     <section className="post">
