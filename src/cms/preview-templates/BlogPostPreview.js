@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { BlogPostTemplate } from '../../templates/BlogPost'
 
 const BlogPostPreview = ({ entry, widgetFor }) => {
-  const tags = entry.getIn(['data', 'tags'])
   return (
     <BlogPostTemplate
       content={widgetFor('body')}
