@@ -14,7 +14,7 @@ import CategoryColors from '../data/CategoryColors'
 
 const BlogPost = ({ data }) => {
   const post = data.markdownRemark
-  const { title, description, category, date, figcaption  } = post.frontmatter
+  const { title, description, category, date, figcaption,  } = post.frontmatter
   const featuredimage = post.frontmatter.featuredimage.childImageSharp.fluid
   const content = post.html
   const PostContent = HTMLContent || content
