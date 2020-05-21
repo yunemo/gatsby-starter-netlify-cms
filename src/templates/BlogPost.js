@@ -24,16 +24,14 @@ export const BlogPostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content
   
-  const year = date.getFullYear();
-  const month = 1 + date.getMonth();
-  const day = date.getDate();
-  const date_str = `${year}/${month}/${day}`;
+  const dateList = date.toUTCString().split(" ")
+  const dateStr = `${dateList[1]}/${dateList[2]}/${dateList[3]}`;
 
   return (
     <section className="post">
       <div className="post_header">
         <div className="post_subline">
-          <div className="post_date"> {date_str} </div>
+          <div className="post_date"> {dateStr} </div>
           <div className="post_category" style={
             CategoryColors[snakeCase(category)] ?
               { color: CategoryColors[snakeCase(category)] }
