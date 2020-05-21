@@ -2,11 +2,12 @@
 templateKey: BlogPost
 title: ZeBrand starts fa your vision
 date: 2019-12-17T15:04:10.000Z
-featuredpost: false
+description: The Coffee Taster’s Flavor Wheel, the official resource used by
+  coffee tasters, has been revised for the first time this year.
+featuredimage: /img/_kyp3148.jpg
 figcaption: Courtesy of TEDDYBOB Pet Supplies
-featuredimage: ../../img/post01.jpg
 featuredarticle: test
-description: The Coffee Taster’s Flavor Wheel, the official resource used by coffee tasters, has been revised for the first time this year.
+featuredpost: false
 category: Brand Bites
 ---
 
