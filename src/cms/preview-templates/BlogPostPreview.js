@@ -11,7 +11,7 @@ const BlogPostPreview = ({ entry, widgetFor, getAsset }) => {
       category={entry.getIn(['data', 'category'])}
       title={entry.getIn(['data', 'title'])}
       figcaption={entry.getIn(['data', 'figcaption'])}
-      featuredimage={getAsset(entry.getIn(['data', 'image']))}
+      featuredimage={getAsset(entry.getIn(['data', 'featuredimage']))}
     />
   )
 }
