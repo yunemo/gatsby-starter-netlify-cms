@@ -28,7 +28,6 @@ export const BlogPostTemplate = ({
   const dateList = date.toUTCString().split(" ")
   const dateStr = `${dateList[2]} ${dateList[1]},${dateList[3]}`;
 
-  const imageStr = JSON.stringify(featuredimage)
   return (
     <section className="post">
       <div className="post_header">
@@ -56,12 +55,12 @@ export const BlogPostTemplate = ({
         {
           featuredimage ? figcaption ? (
             <div className="post_kv">
-              <PreviewCompatibleImage imageInfo={featuredimage} />
+              <img src={featuredimage.blob} />
               <div className="post_caption">{figcaption}</div>
             </div>
           ) : (
               <div className="post_kv">
-              <PreviewCompatibleImage imageInfo={featuredimage} />
+              <img src={featuredimage.blob} />
               </div>
             ) : null
         }
