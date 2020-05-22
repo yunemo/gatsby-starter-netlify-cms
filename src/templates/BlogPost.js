@@ -28,7 +28,7 @@ export const BlogPostTemplate = ({
   const dateList = date.toUTCString().split(" ")
   const dateStr = `${dateList[2]} ${dateList[1]},${dateList[3]}`;
 
-  const imageStr = featuredimage.toString()
+  const imageStr = JSON.stringify(featuredimage)
   return (
     <section className="post">
       <div className="post_header">
