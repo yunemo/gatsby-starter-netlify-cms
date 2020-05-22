@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import RelatedPost from '../components/RelatedPost'
 import Img from "gatsby-image"
 import facebook from '../img/icon-fb.svg'
@@ -53,12 +54,12 @@ export const BlogPostTemplate = ({
         {
           featuredimage ? figcaption ? (
             <div className="post_kv">
-              <Img fluid={featuredimage} alt={title} />
+              <PreviewCompatibleImage imageInfo={featuredimage} />
               <div className="post_caption">{figcaption}</div>
             </div>
           ) : (
               <div className="post_kv">
-                <Img fluid={featuredimage} alt={title} />
+              <PreviewCompatibleImage imageInfo={featuredimage} />
               </div>
             ) : null
         }
