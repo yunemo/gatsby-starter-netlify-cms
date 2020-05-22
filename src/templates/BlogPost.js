@@ -5,13 +5,12 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import RelatedPost from '../components/RelatedPost'
 import Img from "gatsby-image"
 import facebook from '../img/icon-fb.svg'
 import twitter from '../img/icon-tw.svg'
 import CategoryColors from '../data/CategoryColors'
-
+import { FacebookShareButton, TwitterShareButton } from "react-share";
 
 export const BlogPostTemplate = ({
   content,
@@ -44,6 +43,7 @@ export const BlogPostTemplate = ({
 
         <div className="post_title">{title}</div>
         <div className="post_social">
+            
           <a className="post_social_link" href="https://www.facebook.com/ZeBrand.official/" target="_blank" alt="facebook">
             <img src={facebook} />
           </a>
@@ -88,6 +88,7 @@ const BlogPost = ({ data }) => {
   const featuredimage = post.frontmatter.featuredimage.childImageSharp.fluid
   const content = post.html
   const PostContent = HTMLContent || content
+  const pageUrl = `https://zebranding.com${post.fields.slug}`
 
   return (
     <Layout>
@@ -115,12 +116,12 @@ const BlogPost = ({ data }) => {
           <div className="post_title">{title}</div>
 
           <div className="post_social">
-            <a className="post_social_link" href="https://www.facebook.com/ZeBrand.official/" target="_blank" alt="facebook">
-              <img src={facebook} />
-            </a>
-            <a className="post_social_link" href="https://twitter.com/ZeBrandOfficial/" target="_blank" alt="twitter">
-              <img src={twitter} />
-            </a>
+            <FacebookShareButton url={pageUrl} className="post_social_link">
+            <img src={facebook} />
+          </FacebookShareButton>
+          <TwitterShareButton url={pageUrl} className="post_social_link">
+            <img src={twitter} />
+          </TwitterShareButton>
           </div>
 
           {
@@ -171,6 +172,9 @@ export const pageQuery = graphql`
             }
           }
         }
+      }
+      fields {
+        slug
       }
     }
   }
