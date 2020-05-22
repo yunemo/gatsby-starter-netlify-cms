@@ -54,12 +54,12 @@ export const BlogPostTemplate = ({
         {
           featuredimage ? figcaption ? (
             <div className="post_kv">
-              <img src={featuredimage.blob} />
+              <img src={featuredimage} />
               <div className="post_caption">{figcaption}</div>
             </div>
           ) : (
               <div className="post_kv">
-              <img src={featuredimage.blob} />
+              <img src={featuredimage} />
               </div>
             ) : null
         }
