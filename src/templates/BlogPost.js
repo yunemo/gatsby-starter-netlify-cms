@@ -28,6 +28,7 @@ export const BlogPostTemplate = ({
   const dateList = date.toUTCString().split(" ")
   const dateStr = `${dateList[2]} ${dateList[1]},${dateList[3]}`;
 
+  const imageStr = featuredimage.toString()
   return (
     <section className="post">
       <div className="post_header">
@@ -51,6 +52,7 @@ export const BlogPostTemplate = ({
             <img src={twitter} />
           </a>
         </div>
+        {imageStr}
         {
           featuredimage ? figcaption ? (
             <div className="post_kv">
