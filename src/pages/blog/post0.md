@@ -1,6 +1,6 @@
 ---
 templateKey: BlogPost
-title: ZeBrand starts fa your vision
+title: ZeBrand starts
 date: 2019-12-17T15:04:10.000Z
 description: The Coffee Taster’s Flavor Wheel, the official resource used by
   coffee tasters, has been revised for the first time this year.
