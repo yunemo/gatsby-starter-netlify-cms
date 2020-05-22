@@ -10,10 +10,11 @@ featuredarticle: test
 featuredpost: false
 category: Brand Bites
 ---
-
-## Brand is a tool for growth. 
+## Brand is a tool for growth.
 
 The purpose of the Francfranc Design System is to enable quick and accurate consensus-building when advocating innovative approaches, reducing the burden on staff and enhancing the value of the brand. The first edition was released in September 2017.
+
+![](/img/flavor_wheel.jpg)
 
 While serving the dual purposes of promoting the brand image and adding functional value in transmitting information, it also aims to efficiently realize a uniformity of quality and encourage the reduction of verification work for staff by producing commonly understood standards.
 
@@ -22,13 +23,12 @@ The Francfranc Design System will help the company evolve and expand while remai
 We hope that staff and other related parties will respect the guidelines, make sound decisions, and produce designs that are both rich in creativity and suitable for the brand.
 
 > Table of Contents
-> 
-> aaaaa
-> 
-> bbbbb
-> 
-> ccccc
 >
+> aaaaa
+>
+> bbbbb
+>
+> ccccc
 
 The purpose of the Francfranc Design System is to enable quick and accurate consensus-building when advocating innovative approaches, reducing the burden on staff and enhancing the value of the brand. The first edition was released in September 2017.
 
