@@ -51,7 +51,6 @@ export const BlogPostTemplate = ({
             <img src={twitter} />
           </a>
         </div>
-        {imageStr}
         {
           featuredimage ? figcaption ? (
             <div className="post_kv">
