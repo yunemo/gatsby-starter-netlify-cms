@@ -12,6 +12,7 @@ import twitter from '../img/icon-tw.svg'
 import CategoryColors from '../data/CategoryColors'
 import { FacebookShareButton, TwitterShareButton } from "react-share";
 
+
 export const BlogPostTemplate = ({
   content,
   contentComponent,
@@ -23,9 +24,9 @@ export const BlogPostTemplate = ({
   featuredimage
 }) => {
   const PostContent = contentComponent || Content
-  
-  const dateList = date.toUTCString().split(" ")
-  const dateStr = `${dateList[2]} ${dateList[1]},${dateList[3]}`;
+
+  const dateList = date ? date.toUTCString().split(" ") : ""
+  const dateStr = dateList ? `${dateList[2]} ${dateList[1]},${dateList[3]}` : "";
 
   return (
     <section className="post">
@@ -41,9 +42,8 @@ export const BlogPostTemplate = ({
           </div>
         </div>
 
-        <div className="post_title">{title}</div>
+        <h1 className="post_title">{title}</h1>
         <div className="post_social">
-            
           <a className="post_social_link" href="https://www.facebook.com/ZeBrand.official/" target="_blank" alt="facebook">
             <img src={facebook} />
           </a>
@@ -88,7 +88,7 @@ const BlogPost = ({ data }) => {
   const featuredimage = post.frontmatter.featuredimage.childImageSharp.fluid
   const content = post.html
   const PostContent = HTMLContent || content
-  const pageUrl = `https://zebranding.com${post.fields.slug}`
+  const pageUrl = `https://zebranding.com/blog/${post.fields.slug}`
 
   return (
     <Layout>
@@ -113,10 +113,10 @@ const BlogPost = ({ data }) => {
             </div>
           </div>
 
-          <div className="post_title">{title}</div>
+          <h1 className="post_title">{title}</h1>
 
           <div className="post_social">
-            <FacebookShareButton url={pageUrl} className="post_social_link">
+          <FacebookShareButton url={pageUrl} className="post_social_link">
             <img src={facebook} />
           </FacebookShareButton>
           <TwitterShareButton url={pageUrl} className="post_social_link">

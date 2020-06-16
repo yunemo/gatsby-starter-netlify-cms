@@ -2,6 +2,14 @@ import React, {useState} from 'react'
 import logo from '../img/logo.svg'
 import IconClose from '../img/icon-close.svg'
 
+const pushGAEvent = () =>
+    window.dataLayer.push({
+      event: "gaEvent",
+      eventCategory: "getstarted",
+      eventAction: "click",
+      eventLabel: "blog-click-header"
+    });
+
 const MobileHeader = () => {
   const[isMenuOpen, setMenuOpen] = useState(false)
   const toggleMenu = () => {
@@ -45,7 +53,7 @@ const MobileHeader = () => {
             ZeBrand is a branding app for early stage businesses.
             </p>
           <div>
-            <a href="/input" className="button-start">
+            <a href="/input" className="button-start" onClick={pushGAEvent}>
               Get Started
               </a>
           </div>

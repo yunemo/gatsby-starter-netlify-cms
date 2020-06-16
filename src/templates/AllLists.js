@@ -21,9 +21,7 @@ const AllLists = props => {
               posts.map(({ node: post }, index) => (
                 <li className={`home_item home_item${index}`} key={post.id}>
                   <Link
-                    className={`home_link ${
-                      post.frontmatter.featuredpost ? 'is-featured' : ''
-                      }`}
+                    className="home_link"
                     to={post.fields.slug}
                   >
                       {post.frontmatter.featuredimage ? (
@@ -47,7 +45,7 @@ const AllLists = props => {
           </ul>
 
           <Pagenation
-            baseDir="/blog/"
+            baseDir="/"
             currentPage={props.pageContext.currentPage}
             numPages={props.pageContext.numPages}
           />
@@ -77,7 +75,6 @@ query AllListsQuery($skip: Int!, $limit: Int!) {
           title
           templateKey
           date(formatString: "MMMM DD, YYYY")
-          featuredpost
           category
           featuredimage {
             childImageSharp {

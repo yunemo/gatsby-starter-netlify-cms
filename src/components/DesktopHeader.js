@@ -1,5 +1,13 @@
-import React from 'react'
-import logo from '../img/logo.svg'
+import React from "react";
+import logo from "../img/logo.svg";
+
+const pushGAEvent = () =>
+  window.dataLayer.push({
+    event: "gaEvent",
+    eventCategory: "getstarted",
+    eventAction: "click",
+    eventLabel: "blog-click-header"
+  });
 
 const DesktopHeader = () => (
   <div className="GlobalHeaderDesktop">
@@ -12,14 +20,10 @@ const DesktopHeader = () => (
     <nav>
       <ul className="list-nav-1">
         <li>
-          <a href="/about/">
-            About
-          </a>
+          <a href="/about/">About</a>
         </li>
         <li>
-          <a href="/how-to/">
-            How to Use
-          </a>
+          <a href="/how-to/">How to Use</a>
         </li>
         <li>
           <a href="https://zebranding.zendesk.com/hc/en-us" target="_blank">
@@ -37,13 +41,13 @@ const DesktopHeader = () => (
           </a>
         </li>
         <li>
-          <a href="/input" className="button-start">
+          <a href="/input" className="button-start" onClick={pushGAEvent}>
             Get Started
           </a>
         </li>
       </ul>
     </nav>
   </div>
-)
+);
 
-export default DesktopHeader
+export default DesktopHeader;

@@ -54,7 +54,7 @@ const CategoryLists = props => {
           <div className="container">
             <ul className="archive_list">{postLinks}</ul>
             <Pagenation
-              baseDir={`/blog/${snakeCasedCategory}/`}
+              baseDir={`/${snakeCasedCategory}/`}
               currentPage={props.pageContext.currentPage}
               numPages={props.pageContext.numPages}
             />

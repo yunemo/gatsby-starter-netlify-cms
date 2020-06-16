@@ -11,7 +11,6 @@
   margin-right: auto; 
   }
   &_title {
-    font-family: Objektiv Mk1;
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
@@ -64,6 +63,10 @@
       margin-right: -25px;
       margin-bottom: 28px;
       width: auto;
+    }
+    &._preview {
+      margin-left: 0;
+      margin-right: 0;
     }
   }
   &_caption {
@@ -118,5 +121,8 @@
       padding: 30px;
       // margin-left: 0;
     }
+  }
+  img {
+    max-width: 100%;
   }
 }

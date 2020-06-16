@@ -15,11 +15,11 @@ const Navbar = () => (
     `}
     render={data => (
       <div className="navbar">
-        <Link className="navbar_title" to="/blog">Blog</Link>
+        <Link className="navbar_title" to="/">Blog</Link>
         <ul className="navbar_list">
         {data.allMarkdownRemark.group.map(category => (
           <li key={category.fieldValue} className="navbar_item">
-            <Link to={`/blog/${snakeCase(category.fieldValue)}/`} className="navbar_link">
+            <Link to={`/${snakeCase(category.fieldValue)}/`} className="navbar_link">
               {category.fieldValue}
             </Link>
           </li>

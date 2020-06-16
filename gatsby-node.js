@@ -98,7 +98,7 @@ exports.createPages = ({ actions, graphql }) => {
       const numPages = Math.ceil(posts.length / postsPerPage)
       Array.from({ length: numPages }).forEach((_, i) => {
         createPage({
-          path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+          path: i === 0 ? `/` : `/${i + 1}`,
           component: path.resolve("src/templates/AllLists.js"),
           context: {
             limit: postsPerPage,
@@ -129,7 +129,7 @@ exports.createPages = ({ actions, graphql }) => {
 
 
           createPage({
-            path: i === 0 ? `/blog/${snakeCase(category)}` : `/blog/${snakeCase(category)}/${i + 1}`,
+            path: i === 0 ? `/${snakeCase(category)}` : `/${snakeCase(category)}/${i + 1}`,
             component: path.resolve("src/templates/CategoryLists.js"),
             context: {
               title,
@@ -146,7 +146,6 @@ exports.createPages = ({ actions, graphql }) => {
     createBlogPosts()
     createAllListPages()
     createCategoryListPages()
-    
   })
 }
 
@@ -155,7 +154,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   fmImagesToRelative(node) // convert image paths for gatsby images
 
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
+    const value = node.frontmatter.slug || createFilePath({ node, getNode })
     createNodeField({
       name: `slug`,
       node,

@@ -1,13 +1,12 @@
-import React from 'react'
-import Layout from '../components/Layout'
+import { useEffect } from 'react'
+import { navigate } from 'gatsby'
 
-const NotFoundPage = () => (
-  <Layout>
-    <div>
-      <h1>NOT FOUND</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </div>
-  </Layout>
-)
+const NotFoundPage = () => {
+  useEffect(() => {
+    window.location = 'https://zebranding.com/404';
+  }, [])
+
+  return null
+};
 
 export default NotFoundPage

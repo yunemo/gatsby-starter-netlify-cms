@@ -208,15 +208,6 @@ textarea {
   min-height: $form-element-min-height;
 }
 
-// specify the font family of code elements
-
-code,
-kbd,
-pre,
-samp {
-  font-family: $monospace-font-family, monospace;
-}
-
 // specify the list style of nav lists
 
 nav ol,
