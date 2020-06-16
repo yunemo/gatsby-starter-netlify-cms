@@ -26,6 +26,6 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Featured Image", name: "featuredimage", widget: image}
-      - {label: "Featured Image Caption", name: "figcaption", widget: "string"}
+      - {label: "Featured Image Caption", name: "figcaption", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Category", name: "category", widget: "string"}
