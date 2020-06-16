@@ -33,7 +33,8 @@ Having a defined target audience is important because it gives you focus. Having
 
 Conduct some dedicated research to understand your potential customers’ priorities and needs. Typically, the best place to start is with your current user base. Start by delving into analytics – from your site (eg. Google Analytics) or social media (eg. LinkedIn, Facebook, Instagram). What is the age, background, spending capacity of your ideal customer? What are their interests? What life stage are they in? Once you compile some highlights, you will have a better understanding of who your high-value customers are. At the same time, looking at new customer behavior can tell you about who your ideal target audience should be.
 
-
+[[danger]]
+| content
 
 #### 2) Check your competition
 
