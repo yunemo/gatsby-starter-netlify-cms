@@ -33,8 +33,6 @@ Having a defined target audience is important because it gives you focus. Having
 
 Conduct some dedicated research to understand your potential customers’ priorities and needs. Typically, the best place to start is with your current user base. Start by delving into analytics – from your site (eg. Google Analytics) or social media (eg. LinkedIn, Facebook, Instagram). What is the age, background, spending capacity of your ideal customer? What are their interests? What life stage are they in? Once you compile some highlights, you will have a better understanding of who your high-value customers are. At the same time, looking at new customer behavior can tell you about who your ideal target audience should be.
 
-[[danger]]
-| content
 
 #### 2) Check your competition
 
@@ -49,7 +47,6 @@ Find out who your key competitors are. This can be done easily by doing a quick 
 Once you understand your target audience a bit better, you should think about what their needs are. How is your business going to help answer those needs in a unique way? IKEA does a great job of aligning their products and communications to specific target audience groups -- an example is its campaigns targeting students with cost-effective furniture.
 
 ![Man holding a light bulb with fairy lights.](/blog/img/riccardo-annandale-7e2pe9wjl9m-unsplash.jpg "Being clear on your business' value proposition can help you align your messaging to your customers' needs.")
-
 *Photo by [Riccardo Annandale](https://unsplash.com/@pavement_special?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/business-value?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
 
 

@@ -121,6 +121,20 @@
       padding: 30px;
       // margin-left: 0;
     }
+    >p {
+      img + em {
+        display: block;
+        font-size: 12px;
+        line-height: 17px;
+        letter-spacing: -0.5px;
+        color: #8E9094;
+        margin-top: 14px;
+        a {
+          color: #8E9094;
+          text-decoration: underline;
+        }
+      }
+    }
   }
   img {
     max-width: 100%;
