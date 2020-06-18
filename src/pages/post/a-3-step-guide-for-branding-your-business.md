@@ -8,7 +8,7 @@ description: From figuring out your target audience to your competition, we have
   brand.
 featuredimage: /blog/img/david-travis-wc6mj0krzgw-unsplash.jpg
 figcaption: |-
-  Conduct some dedicated research to understand your potential customers 
+  some dedicated research to understand your potential customers 
   [test](https://google.com)  priorities and needs`.
 
   ##rest
