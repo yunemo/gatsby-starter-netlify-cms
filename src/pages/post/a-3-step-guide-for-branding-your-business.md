@@ -8,7 +8,7 @@ description: From figuring out your target audience to your competition, we have
   brand.
 featuredimage: /blog/img/david-travis-wc6mj0krzgw-unsplash.jpg
 figcaption: Conduct some dedicated research to understand your potential
-  customers’ priorities and needs.
+  customers [test](https://google.com) priorities and needs`.
 category: A to Ze Branding
 ---
 When you are building up your business, you will hear the terms ‘brand’ and ‘branding’ often. A brand gives your business an identity and creates awareness amongst customers, investors, partners and even your own employees. This may seem like a burdensome, expensive task. But it may not be as complicated or as expensive as you think. Follow our 3-step guide on how you can get started. But before that, let’s define what branding entails.
