@@ -77,6 +77,13 @@
     @include sp {
       padding:0 25px;
     }
+    a {
+      color: #8E9094;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
     
   }
   &_content {
@@ -121,17 +128,17 @@
       padding: 30px;
       // margin-left: 0;
     }
-    >p {
-      img + em {
-        display: block;
-        font-size: 12px;
-        line-height: 17px;
-        letter-spacing: -0.5px;
+    img + em {
+      display: block;
+      font-size: 12px;
+      line-height: 17px;
+      color: #8E9094;
+      margin-top: 13px;
+      a {
         color: #8E9094;
-        margin-top: 14px;
-        a {
-          color: #8E9094;
-          text-decoration: underline;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
         }
       }
     }

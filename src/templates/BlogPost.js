@@ -84,7 +84,8 @@ BlogPostTemplate.propTypes = {
 
 const BlogPost = ({ data }) => {
   const post = data.markdownRemark
-  const { title, description, category, date, figcaption,  } = post.frontmatter
+  const { title, description, category, date } = post.frontmatter
+  const { figcaption }  = post.fields
   const featuredimage = post.frontmatter.featuredimage.childImageSharp.fluid
   const content = post.html
   const PostContent = HTMLContent || content
@@ -128,7 +129,7 @@ const BlogPost = ({ data }) => {
             featuredimage ? figcaption ? (
               <div className="post_kv">
                 <Img fluid={featuredimage} alt={title} />
-                <div className="post_caption">{figcaption}</div>
+                <div className="post_caption" dangerouslySetInnerHTML={{__html: figcaption}}></div>
               </div>
             ) : (
                 <div className="post_kv">
@@ -164,7 +165,6 @@ export const pageQuery = graphql`
         title
         description
         category
-        figcaption
         featuredimage {
           childImageSharp {
             fluid(maxWidth: 960, quality: 100) {
@@ -175,6 +175,7 @@ export const pageQuery = graphql`
       }
       fields {
         slug
+        figcaption
       }
     }
   }

@@ -2,6 +2,8 @@ const { snakeCase } = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
+const remark = require('remark');
+const remarkHTML = require('remark-html');
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -155,10 +157,27 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (node.internal.type === `MarkdownRemark`) {
     const value = node.frontmatter.slug || createFilePath({ node, getNode })
+    console.log(value)
     createNodeField({
       name: `slug`,
       node,
       value,
     })
+    const figcaption = node.frontmatter.figcaption
+    if(figcaption) {
+      const figcaptionValue = remark()
+        .use(remarkHTML)
+        .processSync(figcaption)
+        .toString();
+      
+      console.log(figcaptionValue)
+      console.log('figcaptionValue')
+      createNodeField({
+        name: `figcaption`,
+        node,
+        value: figcaptionValue
+      })
+    }
   }
+  
 }
