@@ -7,13 +7,13 @@ description: From figuring out your target audience to your competition, we have
   tips at hand on how you can tackle branding for your business to hone your
   brand.
 featuredimage: /blog/img/david-travis-wc6mj0krzgw-unsplash.jpg
-figcaption: >-
-  Conduct some dedicated research to understand your potential customers
+figcaption: |-
+  Conduct some dedicated research to understand your potential customers 
   [test](https://google.com)  priorities and needs`.
-
 
   ##rest
 
+  ###fadsfafsdfdsf
 
   testfasdfasdf
 category: A to Ze Branding
